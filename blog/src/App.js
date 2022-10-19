@@ -1,23 +1,14 @@
 import React from 'react';
-import Wrapper from './component/Wrapper';
-import Hello from './component/Hello';
-import Counter from './component/Counter';
-import InputSample from './component/InputSample';
-import InputSample2 from './component/InputSample2';
+import { Outlet } from 'react-router-dom';
+import Header from './component/Header';
 
 function App(){
 	return (
-		<Wrapper>
-			{/* 주석은이렇게 써요 */}
-			<Hello name="name_prop"/>
-			<Hello/>
-			<Hello/>
-			<Hello/>
-
-			<Counter/>
-			<InputSample/>
-			<InputSample2/>
-		</Wrapper>
+		<>
+		<Header>
+		</Header>
+		<Outlet/>
+		</>
 	)
 
 }
