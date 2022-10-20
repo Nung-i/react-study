@@ -12,6 +12,11 @@ code {
 	monospace;
 }
 
+a{
+	color: inherit;
+	text-decoration: inherit;
+}
+
 .my-row{
 	display: flex;
 	flex-direction: row;

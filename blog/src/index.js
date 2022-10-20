@@ -5,6 +5,7 @@ import App from './App';
 import TestApp from './TestApp';
 import './index.css';
 import List from './component/board/List';
+import Write from './component/board/Write';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,8 +13,12 @@ root.render(
 		<Routes>
 			<Route path='/' element={<App/>}>
 				<Route path='test-app' element={<TestApp/>}></Route>
-				<Route path='board' element={<List/>}></Route>
+				<Route path='board'>
+					<Route path='list' element={<List/>}></Route>
+					<Route path='write' element={<Write/>}></Route>
+				</Route>
 			</Route>
+			<Route path='*' element='404'></Route>
 		</Routes>
 	</BrowserRouter>
 );

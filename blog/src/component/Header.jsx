@@ -24,7 +24,7 @@ function Header(props){
 			<div className='my-col-10'>
 				<ul style={menu_css}>
 					<li style={menu_item_css}><Link to='/test-app'>테스트다</Link></li>
-					<li style={menu_item_css}><Link to='/board' style={{color:'yellow'}}>게시판</Link></li>
+					<li style={menu_item_css}><Link to='/board/list' style={{color:'yellow'}}>게시판</Link></li>
 				</ul>
 			</div>
 		</div>

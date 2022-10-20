@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Button from '@mui/material/Button';
 
 function List(){
 	const list_css = {
@@ -17,11 +18,8 @@ function List(){
 	return (
 		<div className='my-row'>
 			<div className='my-col'>
-				<div style={{padding: '50px 200px 0 200px'}}>
-					<Link 
-						style={{backgroundColor:'black', color:'white', border:'1px solid black', borderRadius:'5px'
-								, padding: '5px 10px', display: 'inline-block', textDecoration: 'none'}}
-						>작성하기</Link>
+				<div>
+					<Button variant='contained' component={Link} to='/board/write'>작성하기</Button>
 
 					<table style={list_css}>
 						<thead style={{backgroundColor:'grey', color:'white'}}>
